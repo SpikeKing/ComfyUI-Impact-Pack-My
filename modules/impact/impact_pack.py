@@ -100,7 +100,7 @@ class SAMLoader:
     def load_model(self, model_name, device_mode="auto"):
         if model_name == 'ESAM':
             if 'ESAM_ModelLoader_Zho' not in nodes.NODE_CLASS_MAPPINGS:
-                try_install_custom_node('https://github.com/ZHO-ZHO-ZHO/ComfyUI-YoloWorld-EfficientSAM',
+                try_install_custom_node('https://gitclone.com/github.com/ZHO-ZHO-ZHO/ComfyUI-YoloWorld-EfficientSAM',
                                         "To use 'ESAM' model, 'ComfyUI-YoloWorld-EfficientSAM' extension is required.")
                 raise Exception("'ComfyUI-YoloWorld-EfficientSAM' node isn't installed.")
 
@@ -969,7 +969,7 @@ class PixelTiledKSampleUpscalerProvider:
                                                       tile_size=max(tile_width, tile_height), tile_cnet_strength=tile_cnet_strength)
             return (upscaler, )
         else:
-            utils.try_install_custom_node('https://github.com/BlenderNeko/ComfyUI_TiledKSampler',
+            utils.try_install_custom_node('https://gitclone.com/github.com/BlenderNeko/ComfyUI_TiledKSampler',
                                           "To use 'PixelTiledKSampleUpscalerProvider' node, 'BlenderNeko/ComfyUI_TiledKSampler' extension is required.")
 
             raise Exception("[ERROR] PixelTiledKSampleUpscalerProvider: ComfyUI_TiledKSampler custom node isn't installed. You must install BlenderNeko/ComfyUI_TiledKSampler extension to use this node.")

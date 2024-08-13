@@ -1730,7 +1730,7 @@ class IPAdapterWrapper:
             if 'IPAdapterApply' in nodes.NODE_CLASS_MAPPINGS:
                 raise Exception(f"[ERROR] 'ComfyUI IPAdapter Plus' is outdated.")
 
-            utils.try_install_custom_node('https://github.com/cubiq/ComfyUI_IPAdapter_plus',
+            utils.try_install_custom_node('https://gitclone.com/github.com/cubiq/ComfyUI_IPAdapter_plus',
                                           "To use 'IPAdapterApplySEGS' node, 'ComfyUI IPAdapter Plus' extension is required.")
             raise Exception(f"[ERROR] To use IPAdapterApplySEGS, you need to install 'ComfyUI IPAdapter Plus'")
 
@@ -1794,7 +1794,7 @@ class ControlNetWrapper:
                 positive, negative, _ = acn.apply_controlnet(positive=positive, negative=negative, control_net=self.control_net, image=cnet_image,
                                                              strength=self.strength, start_percent=0.0, end_percent=1.0)
             else:
-                utils.try_install_custom_node('https://github.com/BlenderNeko/ComfyUI_TiledKSampler',
+                utils.try_install_custom_node('https://gitclone.com/github.com/BlenderNeko/ComfyUI_TiledKSampler',
                                               "To use 'ControlNetWrapper' for AnimateDiff, 'ComfyUI-Advanced-ControlNet' extension is required.")
                 raise Exception("'ACN_AdvancedControlNetApply' node isn't installed.")
         else:
@@ -1854,7 +1854,7 @@ class ControlNetAdvancedWrapper:
                 positive, negative, _ = acn.apply_controlnet(positive=positive, negative=negative, control_net=self.control_net, image=cnet_image,
                                                              strength=self.strength, start_percent=self.start_percent, end_percent=self.end_percent)
             else:
-                utils.try_install_custom_node('https://github.com/BlenderNeko/ComfyUI_TiledKSampler',
+                utils.try_install_custom_node('https://gitclone.com/github.com/BlenderNeko/ComfyUI_TiledKSampler',
                                               "To use 'ControlNetAdvancedWrapper' for AnimateDiff, 'ComfyUI-Advanced-ControlNet' extension is required.")
                 raise Exception("'ACN_AdvancedControlNetApply' node isn't installed.")
         else:
@@ -1875,7 +1875,7 @@ class TiledKSamplerWrapper:
         if "BNK_TiledKSampler" in nodes.NODE_CLASS_MAPPINGS:
             TiledKSampler = nodes.NODE_CLASS_MAPPINGS['BNK_TiledKSampler']
         else:
-            utils.try_install_custom_node('https://github.com/BlenderNeko/ComfyUI_TiledKSampler',
+            utils.try_install_custom_node('https://gitclone.com/github.com/BlenderNeko/ComfyUI_TiledKSampler',
                                           "To use 'TiledKSamplerProvider', 'Tiled sampling for ComfyUI' extension is required.")
             raise Exception("'BNK_TiledKSampler' node isn't installed.")
 
@@ -1909,7 +1909,7 @@ class PixelTiledKSampleUpscaler:
         if "BNK_TiledKSampler" in nodes.NODE_CLASS_MAPPINGS:
             TiledKSampler = nodes.NODE_CLASS_MAPPINGS['BNK_TiledKSampler']
         else:
-            utils.try_install_custom_node('https://github.com/BlenderNeko/ComfyUI_TiledKSampler',
+            utils.try_install_custom_node('https://gitclone.com/github.com/BlenderNeko/ComfyUI_TiledKSampler',
                                           "To use 'PixelTiledKSampleUpscalerProvider', 'Tiled sampling for ComfyUI' extension is required.")
             raise RuntimeError("'BNK_TiledKSampler' node isn't installed.")
 
@@ -2009,7 +2009,7 @@ class BBoxDetectorBasedOnCLIPSeg:
         if "CLIPSeg" in nodes.NODE_CLASS_MAPPINGS:
             CLIPSeg = nodes.NODE_CLASS_MAPPINGS['CLIPSeg']
         else:
-            utils.try_install_custom_node('https://github.com/biegert/ComfyUI-CLIPSeg/raw/main/custom_nodes/clipseg.py',
+            utils.try_install_custom_node('https://gitclone.com/github.com/biegert/ComfyUI-CLIPSeg/raw/main/custom_nodes/clipseg.py',
                                           "To use 'CLIPSegDetectorProvider', 'CLIPSeg' extension is required.")
             raise Exception("'CLIPSeg' node isn't installed.")
 

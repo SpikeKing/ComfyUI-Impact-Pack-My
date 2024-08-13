@@ -302,7 +302,7 @@ class InjectNoiseHook(PixelKSampleHook):
             NoisyLatentImage = nodes.NODE_CLASS_MAPPINGS["BNK_NoisyLatentImage"]
             InjectNoise = nodes.NODE_CLASS_MAPPINGS["BNK_InjectNoise"]
         else:
-            utils.try_install_custom_node('https://github.com/BlenderNeko/ComfyUI_Noise',
+            utils.try_install_custom_node('https://gitclone.com/github.com/BlenderNeko/ComfyUI_Noise',
                                           "To use 'NoiseInjectionHookProvider', 'ComfyUI Noise' extension is required.")
             raise Exception("'BNK_NoisyLatentImage', 'BNK_InjectNoise' nodes are not installed.")
 
@@ -382,7 +382,7 @@ class InjectNoiseHookForDetailer(DetailerHook):
             NoisyLatentImage = nodes.NODE_CLASS_MAPPINGS["BNK_NoisyLatentImage"]
             InjectNoise = nodes.NODE_CLASS_MAPPINGS["BNK_InjectNoise"]
         else:
-            utils.try_install_custom_node('https://github.com/BlenderNeko/ComfyUI_Noise',
+            utils.try_install_custom_node('https://gitclone.com/github.com/BlenderNeko/ComfyUI_Noise',
                                           "To use 'NoiseInjectionDetailerHookProvider', 'ComfyUI Noise' extension is required.")
             raise Exception("'BNK_NoisyLatentImage', 'BNK_InjectNoise' nodes are not installed.")
 
